@@ -2,37 +2,55 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heading h1 {
+  color: #112949;
+}
+.heading p {
+  color: #112949;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+.left {
+  width: 35vw; /* Take 50% of the viewport width */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the width */
+}
+.right-wrapper {
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.right {
+  width: 50vw;
+  display: grid; /* Allow the grid to expand horizontally */
+  grid-template-columns: repeat(3, 1fr); /* Set the number of columns */
+  gap: 10px;
+  /* min-width: max-content; */
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form input {
+  padding: 10px;
+  margin-right: 10px;
+  width: 200px;
+  border: 1px solid #ababab;
+  border-radius: 10px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background: #ea7b2c;
+  border-radius: 10px;
+  border: 1px solid #ea7b2c;
 }
